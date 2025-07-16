@@ -1,21 +1,37 @@
 export default function Hero() {
   return (
-    <section className="bg-white py-20 px-6 text-center">
-      <div className="max-w-3xl mx-auto">
-        <img
-          src="/PasfotoHannySafira.jpeg"
-          alt="Developer Avatar"
-          className="w-28 h-28 rounded-full mx-auto mb-4 shadow-md"
-        />
-        <h1 className="text-4xl font-bold text-gray-900">Hanny Safira</h1>
-        <p className="text-lg text-gray-600 mt-2">Full-Stack Web Developer</p>
-        <p className="mt-4 text-gray-700">
-          Building scalable and high-performance web solutions tailored to human
-          connection.
+    <section className="bg-gradient-to-b from-white to-blue-50 py-24 px-6 text-center">
+      <div className="max-w-4xl mx-auto">
+        <div className="relative w-36 h-36 mx-auto mb-6">
+          <img
+            src="/PasfotoHannySafira.jpeg"
+            alt="Hanny Safira"
+            className="w-full h-full object-cover rounded-full shadow-xl border-4 border-white"
+          />
+          <div className="absolute inset-0 rounded-full ring-2 ring-indigo-500 animate-pulse opacity-10"></div>
+        </div>
+
+        <h1 className="text-5xl font-extrabold text-gray-900 tracking-tight">
+          Hanny Safira
+        </h1>
+        <p className="text-xl text-indigo-700 mt-2 font-medium">
+          Full-Stack Web Developer
         </p>
-        <button className="mt-6 px-6 py-2 bg-blue-950 text-white rounded hover:bg-blue-950">
-          View Portfolio
-        </button>
+
+        <p className="mt-4 text-gray-600 text-lg leading-relaxed">
+          Crafting scalable and high-performance web solutions
+          <br />
+          with a focus on people and purpose.
+        </p>
+
+        <div className="mt-6">
+          <a
+            href="#portfolio"
+            className="inline-block px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition"
+          >
+            🚀 View Portfolio
+          </a>
+        </div>
       </div>
     </section>
   );
